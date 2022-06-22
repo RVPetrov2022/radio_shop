@@ -583,6 +583,7 @@ border-radius: 10px;
 .main_catalog .container .card .text {
 color: #c03636;
 margin: 20px 10px;
+height: 80px;
 }
 .main_catalog .container .card .follow_link {
 color: #f8ebeb;
