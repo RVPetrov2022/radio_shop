@@ -1,0 +1,117 @@
+/**********************************************
+          Index.html Header Адаптация меню 
+************************************************/
+
+@media screen and (max-width:950px) {
+
+header  section p.container {
+        
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+    margin: 0 auto;
+     }
+  
+    
+nav.topmenu {
+width: 100vw;
+font-size: 14px;
+margin: 0px;
+padding: 1px; 
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+    }
+.searschform {
+ width: 400px;
+    }
+    
+header  p.container {
+text-align: center;
+padding 0;
+    }
+}
+
+
+/****************************************************
+         MAIN  Адаптация SLider
+*****************************************************/
+@media screen and (max-width:750px) {
+
+.slider .container,
+.slider_desk,
+.slider_block {
+ width: 400px;
+ height: 200px;
+}
+
+.slider_block img {
+ width: 400px;
+ height: 200px;   
+    }    
+    
+
+  
+    
+    
+}
+
+
+
+/***********************************************************
+АДАПТАЦИЯ КАТАЛОГА ПОУПУЛЯРНЫХ ТОВАРОВ FLEX BOX CARD CONTAINER
+************************************************************/
+
+@media screen and (max-width: 1280px) {
+    header p.container {
+ padding: 0;       
+        
+        
+    }
+    .main_catalog .container {
+
+   /*! background: linear-gradient(0deg, rgba(247,249,242,0.7455182756696428) 0%, rgba(195,232,208,1) 42%, rgba(233,204,142,1) 83%); *//*! background-color: yellow; */ 
+   justify-content: center;
+  
+  background-color: red;
+  width: 100%;
+    
+    }
+   
+    
+}
+
+@media screen and (max-width: 810px) {
+/*********** HEADER *****/
+    
+    
+    
+    
+   .main_catalog .container  {
+    /* background: linear-gradient(0deg, rgba(247,249,242,0.7455182756696428) 0%, rgba(215,201,163,1) 42%, rgba(233,204,142,1) 83%); */
+     justify-content: center;
+   
+    
+    }
+   
+.slider button {
+ top: 90px;    
+}
+
+.slider_points {
+top: 200px;  
+left: 60px;
+    
+}
+
+/***************  Кружочки ***********/
+.slider_points span {
+	flex: none;
+   	height: 10px;
+    width: 10px;
+    
+}
+
+}
+

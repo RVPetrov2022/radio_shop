@@ -133,7 +133,10 @@ height:200px;
 }
 /***************  Заголовок и телефон по ФОТО ************/  
 header  p.container {
-text-align: center;
+padding-left: 100px;
+
+
+/* */
 }
 header section div {
 width: 70vw;   
@@ -153,7 +156,6 @@ content: "\2709 \00A0  ";
 header nav {
     display: flex;
     gap: 16px;
-    
 }
 header nav a {
     height: 24px;
@@ -192,8 +194,131 @@ align-content: center;
 }
 
 
+/**********************************************
+           Адаптация меню 
+************************************************/
+
+@media screen and (max-width:950px) {
+
+nav.topmenu {
+width: 100vw;
+font-size: 14px;
+margin: 0px;
+padding: 1px; 
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+    }
+.searschform {
+ width: 400px;
+    }
+    
+header  p.container {
+/*! width: 100vw; */
+text-align: center;
+padding 0;
+    }
+}
 
 
+/**********************************************************
+         FOOTER FLOOR 1
+***********************************************************/
+
+footer {
+    margin: 60px 0 0 0;
+    font-weight: 900;
+    flex: none;
+    color: white;
+    background: linear-gradient(90deg, rgba(18,18,18,1) 15%, rgba(56,56,53,1) 37%, rgba(112,112,110,1) 61%, rgba(17,17,17,1) 100%);
+
+
+}
+footer section div nav.footermenu {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; 
+/* background-color: green; */
+justify-content: space-between;
+ width: 100vw; 
+}
+
+
+footer section:nth-child(1) {
+    padding: 16px 0;
+    border-bottom: 2px solid white;
+    
+}
+.footermenu:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer a {
+color: #F0FC2F;    
+text-decoration: none;    
+}
+
+footer a:hover {
+color: #24260d;    
+border: 1px solid black;
+border-radius: 4px;
+background-color: #f6f7e9;
+padding: 2px 4px;
+}
+
+footer h3 {
+text-shadow: 1px 2px 14px #d8d85d, 3px -5px 13px #3de45f;
+font-size: 16px;
+}
+
+footer li:before {
+content: "\2714 \00A0 \00A0 \00A0"  ;    
+}
+
+
+
+/**********************************************************
+         FOOTER FLOOR 2
+***********************************************************/
+footer section:nth-child(2) {
+justify-content: flex-start;
+}
+
+/**********************************************************
+         FOOTER FLOOR 3
+***********************************************************/
+footer .copy {
+text-align: center;
+background: linear-gradient(90deg, rgba(204,138,52,1) 15%, rgba(208,200,77,1) 47%, rgba(144,193,121,1) 71%, rgba(180,193,121,1) 86%);
+color: #0c4121;
+ width: 100vw;
+
+}
+/***********************************************
+   MAIN PAYPAL.HTML
+**************************************************/
+.paypal_catalog .container {
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ justify-content: space-between;
+
+ /*border: 1px solid black; */
+    
+}
+/***********************************************/
+@media screen and (max-width:1130px) {
+ .paypal_catalog .container {
+flex-direction: column;  
+     }
+    footer section div nav.footermenu {
+       /* background-color: teal; */
+       
+    }  
+}
 /***********************************************/ 
 main .paypal_catalog {
 display: flex;
@@ -310,32 +435,6 @@ main {
     right: 0;
 }
 
-
-/***********************************************
-   MAIN PAYPAL.HTML
-**************************************************/
-.paypal_catalog .container {
- display: flex;
- flex-direction: row;
- gap: 10px;
- justify-content: space-between;
-
- /*border: 1px solid black; */
-    
-}
-/***********************************************/
-@media screen and (max-width:1130px) {
- .paypal_catalog .container {
-flex-direction: column;  
-     }
-    footer section div nav.footermenu {
-       /* background-color: teal; */
-       
-    }  
-}
-
-
-
 /*****************************************
      SLIDER
 *****************************************/
@@ -419,6 +518,25 @@ flex-direction: column;
 }
 
 
+/****************************************************
+          Адаптация SLider
+*****************************************************/
+@media screen and (max-width:750px) {
+    
+    main .slider  {
+      background-color: yellow;
+       width: 400px; 
+        
+        
+    }
+     
+    .slider_desk{
+      
+        width: 400px;
+        
+    }    
+}
+
 /***************************************************
           Каталог популярных  товаров
 ****************************************************/
@@ -435,11 +553,8 @@ align-content: center; /* FLEX BOX  выравнивание по центру *
 }
 
 .main_catalog h3 {
-
 text-align: center;
-color: blue;  
-text-shadow: 2px 2px 15px black;
-font-size: 20px;
+color: blue;    
 }
 .main_catalog .container .card {
 flex-direction: column;
@@ -487,25 +602,65 @@ background-color: #148b14;
 
 .main_catalog .container .card:nth-child(4) .img {
 background-image: url('../images/img_index/tang_3.jpg');    
-mix-blend-mode: hard-light;
+
 }
 
 .main_catalog .container .card:nth-child(3) .img {
 background-image: url('../images/img_index/mobile_tx_5.jpg');    
-mix-blend-mode: multiply;
+
 }
 
 .main_catalog .container .card:nth-child(1) .img {
 background-image: url('../images/img_index/ant_2.jpg');    
-mix-blend-mode: multiply;
+
 }
 
 
 .main_catalog .container .card:nth-child(2) .img {
 background-image: url('../images/img_index/tnc_bnc.jpg');    
- mix-blend-mode: difference;   
+
 }
 
+
+/***********************************************************
+АДАПТАЦИЯ FLEX BOX CARD CONTAINER
+************************************************************/
+
+@media screen and (min-width: 1280px) {
+
+    .main_catalog .container {
+
+   /*! background: linear-gradient(0deg, rgba(247,249,242,0.7455182756696428) 0%, rgba(195,232,208,1) 42%, rgba(233,204,142,1) 83%); *//*! background-color: yellow; */ 
+   justify-content: center;
+   gap:10px;
+    }
+   
+    
+}
+
+@media screen and (max-width: 810px) {
+
+   .main_catalog .container  {
+     background: linear-gradient(0deg, rgba(247,249,242,0.7455182756696428) 0%, rgba(215,201,163,1) 42%, rgba(233,204,142,1) 83%);
+     justify-content: center;
+   
+    }
+   
+    
+}
+
+@media screen and (max-width: 360px) {
+
+    .main_catalog .container  {
+    width: 350px; 
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(237,236,212,1) 8%, rgba(222,220,163,1) 12%, rgba(215,211,114,1) 15%, rgba(138,198,166,1) 37%, rgba(159,226,188,1) 61%, rgba(232,229,159,1) 100%);
+   
+   
+    }
+   
+    
+}
 
 /* catalog */
 .catalog .container {
@@ -890,90 +1045,5 @@ legend + input {
 }
 
 
-/**********************************************************
-         FOOTER FLOOR 1
-***********************************************************/
 
-footer {
-    margin: 60px 0 0 0;
-    font-weight: 900;
-    flex: none;
-    color: white;
-    background: linear-gradient(90deg, rgba(18,18,18,1) 15%, rgba(56,56,53,1) 37%, rgba(112,112,110,1) 61%, rgba(17,17,17,1) 100%);
-
-
-}
-footer section div nav.footermenu {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap; 
-/* background-color: green; */
-justify-content: space-between;
- width: 100vw; 
-}
-
-
-footer section:nth-child(1) {
-    padding: 16px 0;
-    border-bottom: 2px solid white;
-    
-}
-.footermenu:nth-child(1) {
-    display: flex;
-   /* justify-content: space-between; */
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-/********* Центрирование блоков */
-.footermenu ul {
-/* background-color: red; */  
-margin: 0 10px;
-width: 180px; 
-}
-
-
-footer a {
-color: #F0FC2F;    
-text-decoration: none;    
-}
-
-footer a:hover {
-color: #24260d;    
-border: 1px solid black;
-border-radius: 4px;
-background-color: #f6f7e9;
-padding: 2px 4px;
-}
-
-footer h3 {
-text-shadow: 1px 2px 14px #d8d85d, 3px -5px 13px #3de45f;
-font-size: 16px;
-text-align: center;
-}
-
-footer li:before {
-content: "\2714 \00A0 \00A0 \00A0"  ;    
-}
-
-
-
-/**********************************************************
-         FOOTER FLOOR 2
-***********************************************************/
-footer section:nth-child(2) {
-justify-content: flex-start;
-}
-
-/**********************************************************
-         FOOTER FLOOR 3
-***********************************************************/
-footer .copy {
-text-align: center;
-/*background: linear-gradient(90deg, rgba(204,138,52,1) 15%, rgba(208,200,77,1) 47%, rgba(144,193,121,1) 71%, rgba(180,193,121,1) 86%); */
-/*color: #0c4121;*/
-width: 60%;    
-margin: 0 auto;
-
-}
 
