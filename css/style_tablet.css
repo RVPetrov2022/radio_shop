@@ -4,8 +4,15 @@
 
 @media screen and (max-width:950px) {
 
+    header section.img {
+      height: 15vw;  
+      
+    }    
+    
+    
 header  section p.container {
-        
+  font-size: 14px;
+ line-height: 16px;
   display: flex;
   flex-direction: column;
    justify-content: center;
@@ -27,11 +34,6 @@ flex-wrap: wrap;
  width: 400px;
     }
     
-header  p.container {
-text-align: center;
-padding 0;
-    }
-}
 
 
 /****************************************************
@@ -50,10 +52,7 @@ padding 0;
  width: 400px;
  height: 200px;   
     }    
-    
-
   
-    
     
 }
 
@@ -74,12 +73,16 @@ padding 0;
    /*! background: linear-gradient(0deg, rgba(247,249,242,0.7455182756696428) 0%, rgba(195,232,208,1) 42%, rgba(233,204,142,1) 83%); *//*! background-color: yellow; */ 
    justify-content: center;
   
-  background-color: red;
+  /*background-color: red; */
   width: 100%;
     
     }
-   
-    
+/* Слайдер  адаптация кружков *****/   
+ .slider_points {
+top: 420px;  
+left:0px;
+width: 100%;    
+}   
 }
 
 @media screen and (max-width: 810px) {
@@ -100,9 +103,9 @@ padding 0;
 }
 
 .slider_points {
-top: 200px;  
-left: 60px;
-    
+top: 420px;  
+left:0px;
+width: 100%;    
 }
 
 /***************  Кружочки ***********/

@@ -5,6 +5,7 @@
 
 @media screen and (max-width: 560px) {
 
+    /******** Каталог популярных категорий ********/
     .main_catalog .container  {
     width: 350px; 
     flex-direction: column;
@@ -13,20 +14,37 @@
    
     }
    
-/* Строка поиска */    
-    header p.container {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-    }
     
 
 /*   SLIDER   */
-main .slider_block {
-background-color: yellow; 
+.slider .container,
+.slider_desk,
+.slider_block {
+ width: 200px;
+ height: 100px;
 }
 
-
-
+.slider_block img {
+ width: 200px;
+ height: 100px;   
+    }    
+    
+.slider_points span {
+	height: 5px;
+	width: 5px;
+    margin: 0 auto;
+	
+}
+.slider button {
+      top: 50px;
+  
+}
+    
+.slider_points {
+    top: 120px;
+    left: 0px;
+    width: 100%;
+    
+}    
 }
 

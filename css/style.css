@@ -101,6 +101,7 @@ section.img {
  background-size: 100%;
 width: 100vw;  
 height:200px;
+ /*! width: auto; */
 }    
     
 /********************* Поле ввода *********/
@@ -422,7 +423,11 @@ flex-direction: column;
 /***************************************************
           Каталог популярных  товаров
 ****************************************************/
+.main_catalog {
+padding: 20px 0;   
+}
 .main_catalog  .container{
+
 margin-right: : 15px;    
 display: flex;
 flex-direction: row;

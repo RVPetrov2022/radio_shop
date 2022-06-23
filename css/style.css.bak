@@ -133,10 +133,7 @@ height:200px;
 }
 /***************  Заголовок и телефон по ФОТО ************/  
 header  p.container {
-padding-left: 100px;
-
-
-/* */
+text-align: center;
 }
 header section div {
 width: 70vw;   
@@ -196,113 +193,7 @@ align-content: center;
 
 
 
-/**********************************************************
-         FOOTER FLOOR 1
-***********************************************************/
 
-footer {
-    margin: 60px 0 0 0;
-    font-weight: 900;
-    flex: none;
-    color: white;
-    background: linear-gradient(90deg, rgba(18,18,18,1) 15%, rgba(56,56,53,1) 37%, rgba(112,112,110,1) 61%, rgba(17,17,17,1) 100%);
-
-
-}
-footer section div nav.footermenu {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap; 
-/* background-color: green; */
-justify-content: space-between;
- width: 100vw; 
-}
-
-
-footer section:nth-child(1) {
-    padding: 16px 0;
-    border-bottom: 2px solid white;
-    
-}
-.footermenu:nth-child(1) {
-    display: flex;
-   /* justify-content: space-between; */
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-/********* Центрирование блоков */
-.footermenu ul {
-/* background-color: red; */  
-margin: 0 10px;
-width: 180px; 
-}
-
-
-footer a {
-color: #F0FC2F;    
-text-decoration: none;    
-}
-
-footer a:hover {
-color: #24260d;    
-border: 1px solid black;
-border-radius: 4px;
-background-color: #f6f7e9;
-padding: 2px 4px;
-}
-
-footer h3 {
-text-shadow: 1px 2px 14px #d8d85d, 3px -5px 13px #3de45f;
-font-size: 16px;
-text-align: center;
-}
-
-footer li:before {
-content: "\2714 \00A0 \00A0 \00A0"  ;    
-}
-
-
-
-/**********************************************************
-         FOOTER FLOOR 2
-***********************************************************/
-footer section:nth-child(2) {
-justify-content: flex-start;
-}
-
-/**********************************************************
-         FOOTER FLOOR 3
-***********************************************************/
-footer .copy {
-text-align: center;
-background: linear-gradient(90deg, rgba(204,138,52,1) 15%, rgba(208,200,77,1) 47%, rgba(144,193,121,1) 71%, rgba(180,193,121,1) 86%);
-color: #0c4121;
- width: 100vw;
-
-}
-/***********************************************
-   MAIN PAYPAL.HTML
-**************************************************/
-.paypal_catalog .container {
- display: flex;
- flex-direction: row;
- gap: 10px;
- justify-content: space-between;
-
- /*border: 1px solid black; */
-    
-}
-/***********************************************/
-@media screen and (max-width:1130px) {
- .paypal_catalog .container {
-flex-direction: column;  
-     }
-    footer section div nav.footermenu {
-       /* background-color: teal; */
-       
-    }  
-}
 /***********************************************/ 
 main .paypal_catalog {
 display: flex;
@@ -418,6 +309,32 @@ main {
     left: 0;
     right: 0;
 }
+
+
+/***********************************************
+   MAIN PAYPAL.HTML
+**************************************************/
+.paypal_catalog .container {
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ justify-content: space-between;
+
+ /*border: 1px solid black; */
+    
+}
+/***********************************************/
+@media screen and (max-width:1130px) {
+ .paypal_catalog .container {
+flex-direction: column;  
+     }
+    footer section div nav.footermenu {
+       /* background-color: teal; */
+       
+    }  
+}
+
+
 
 /*****************************************
      SLIDER
@@ -973,5 +890,90 @@ legend + input {
 }
 
 
+/**********************************************************
+         FOOTER FLOOR 1
+***********************************************************/
 
+footer {
+    margin: 60px 0 0 0;
+    font-weight: 900;
+    flex: none;
+    color: white;
+    background: linear-gradient(90deg, rgba(18,18,18,1) 15%, rgba(56,56,53,1) 37%, rgba(112,112,110,1) 61%, rgba(17,17,17,1) 100%);
+
+
+}
+footer section div nav.footermenu {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; 
+/* background-color: green; */
+justify-content: space-between;
+ width: 100vw; 
+}
+
+
+footer section:nth-child(1) {
+    padding: 16px 0;
+    border-bottom: 2px solid white;
+    
+}
+.footermenu:nth-child(1) {
+    display: flex;
+   /* justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+/********* Центрирование блоков */
+.footermenu ul {
+/* background-color: red; */  
+margin: 0 10px;
+width: 180px; 
+}
+
+
+footer a {
+color: #F0FC2F;    
+text-decoration: none;    
+}
+
+footer a:hover {
+color: #24260d;    
+border: 1px solid black;
+border-radius: 4px;
+background-color: #f6f7e9;
+padding: 2px 4px;
+}
+
+footer h3 {
+text-shadow: 1px 2px 14px #d8d85d, 3px -5px 13px #3de45f;
+font-size: 16px;
+text-align: center;
+}
+
+footer li:before {
+content: "\2714 \00A0 \00A0 \00A0"  ;    
+}
+
+
+
+/**********************************************************
+         FOOTER FLOOR 2
+***********************************************************/
+footer section:nth-child(2) {
+justify-content: flex-start;
+}
+
+/**********************************************************
+         FOOTER FLOOR 3
+***********************************************************/
+footer .copy {
+text-align: center;
+/*background: linear-gradient(90deg, rgba(204,138,52,1) 15%, rgba(208,200,77,1) 47%, rgba(144,193,121,1) 71%, rgba(180,193,121,1) 86%); */
+/*color: #0c4121;*/
+width: 60%;    
+margin: 0 auto;
+
+}
 
