@@ -1,3 +1,31 @@
+/***********************************************************
+АДАПТАЦИЯ КАТАЛОГА ПОУПУЛЯРНЫХ ТОВАРОВ FLEX BOX CARD CONTAINER
+************************************************************/
+
+@media screen and (max-width: 1280px) {
+    header p.container {
+ padding: 0;       
+        
+        
+    }
+    .main_catalog .container {
+
+   /*! background: linear-gradient(0deg, rgba(247,249,242,0.7455182756696428) 0%, rgba(195,232,208,1) 42%, rgba(233,204,142,1) 83%); *//*! background-color: yellow; */ 
+   justify-content: center;
+  
+  /*background-color: red; */
+  width: 100%;
+    
+    }
+/* Слайдер  адаптация кружков *****/   
+ .slider_points {
+top: 420px;  
+left:0px;
+width: 100%;    
+}   
+}
+
+
 /**********************************************
           Index.html Header Адаптация меню 
 ************************************************/
@@ -34,57 +62,6 @@ flex-wrap: wrap;
  width: 400px;
     }
     
-
-
-/****************************************************
-         MAIN  Адаптация SLider
-*****************************************************/
-@media screen and (max-width:750px) {
-
-.slider .container,
-.slider_desk,
-.slider_block {
- width: 400px;
- height: 200px;
-}
-
-.slider_block img {
- width: 400px;
- height: 200px;   
-    }    
-  
-    
-}
-
-
-
-/***********************************************************
-АДАПТАЦИЯ КАТАЛОГА ПОУПУЛЯРНЫХ ТОВАРОВ FLEX BOX CARD CONTAINER
-************************************************************/
-
-@media screen and (max-width: 1280px) {
-    header p.container {
- padding: 0;       
-        
-        
-    }
-    .main_catalog .container {
-
-   /*! background: linear-gradient(0deg, rgba(247,249,242,0.7455182756696428) 0%, rgba(195,232,208,1) 42%, rgba(233,204,142,1) 83%); *//*! background-color: yellow; */ 
-   justify-content: center;
-  
-  /*background-color: red; */
-  width: 100%;
-    
-    }
-/* Слайдер  адаптация кружков *****/   
- .slider_points {
-top: 420px;  
-left:0px;
-width: 100%;    
-}   
-}
-
 @media screen and (max-width: 810px) {
 /*********** HEADER *****/
     
@@ -117,4 +94,34 @@ width: 100%;
 }
 
 }
+
+
+/****************************************************
+         MAIN  Адаптация SLider
+*****************************************************/
+@media screen and (max-width:750px) {
+
+.slider .container,
+.slider_desk,
+.slider_block {
+ width: 400px;
+ height: 200px;
+}
+
+.slider_block img {
+ width: 400px;
+ height: 200px;   
+    }    
+.slider_points {
+
+top: 220px;  
+left:0px;
+width: 100%;    
+}  
+}
+
+
+
+
+
 
