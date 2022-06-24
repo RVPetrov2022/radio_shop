@@ -39,7 +39,7 @@ body {
     /*! width: 90vw; */
     margin: 0 auto;
     /*! padding: 7px; */
-    width: 100vw;
+    /*! width: 100vw; */
 }
 h1 {
     font: bold 32px/48px 'roboto';
@@ -105,6 +105,11 @@ height:200px;
 }    
     
 /********************* Поле ввода *********/
+
+header section.mainhead {
+margin: 10px auto; /* Отсупы у строки поиска */
+}
+
 .searschform {
     
     background: #D3D9E9;
@@ -515,7 +520,9 @@ background-image: url('../images/img_index/tnc_bnc.jpg');
  mix-blend-mode: difference;   
 }
 
-
+/**********************************************************
+             PRODUCT.HTML 
+**********************************************************/
 /* catalog */
 .catalog .container {
     overflow: hidden;
@@ -544,7 +551,7 @@ background-image: url('../images/img_index/tnc_bnc.jpg');
 }
 .price {
     font: bold 32px/48px 'roboto';
-    color: red;
+    color: #150b37;
 }
 .item-desk {
     display: grid;
@@ -558,15 +565,16 @@ background-image: url('../images/img_index/tnc_bnc.jpg');
 .item:hover {
     box-shadow: 1px 1px 15px rgba(0,0,0,0.3);
 }
+/************************** КНОПКА КУПИТЬ BUY  ***************************/
 .buy,
 .item button {
-    background: #ff2780;
+    background: #959d6a;
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 48px;
     padding: 12px 28px;
     display: block;
-    width: 100%;
+    width: 200px;
     border-radius: 16px;
     margin: 16px 0 0;
     border: 4px solid white;
@@ -574,7 +582,8 @@ background-image: url('../images/img_index/tnc_bnc.jpg');
 }
 .buy:hover,
 .item button:hover {
-    color: yellow;
+    color: #221d1d;
+    background-color: #dcdfcd;
 }
 
 /* catmenu */
@@ -582,8 +591,8 @@ background-image: url('../images/img_index/tnc_bnc.jpg');
     font-size: 32px;
     line-height: 48px;
     padding: 16px 16px 16px 80px;
-    background: #ff2780;
-    color: white;
+    background: #0c1753;
+    color: #e3e1bf;
     cursor: pointer;
     border-radius: 16px;
     margin-bottom: 16px;
@@ -718,6 +727,14 @@ background-image: url('../images/img_index/tnc_bnc.jpg');
 }
 .rail img {
     cursor: pointer;
+}
+/************ Описание товара *******************************************/
+main article div.descriptions h3 {
+display: block;
+margin: 10px;
+font-size: 20px;
+/*background-color: red; */
+text-align: left;
 }
 
 /* popups */

@@ -38,8 +38,8 @@ body {
 .container {
     /*! width: 90vw; */
     margin: 0 auto;
-    padding: 7px;
-    width: 100vw;
+    /*! padding: 7px; */
+    /*! width: 100vw; */
 }
 h1 {
     font: bold 32px/48px 'roboto';
@@ -101,10 +101,17 @@ section.img {
  background-size: 100%;
 width: 100vw;  
 height:200px;
+ /*! width: auto; */
 }    
     
 /********************* Поле ввода *********/
+
+header section.mainhead {
+margin: 10px auto; /* Отсупы у строки поиска */
+}
+
 .searschform {
+    
     background: #D3D9E9;
     border-radius: 8px;
     height: 24px;
@@ -133,6 +140,7 @@ height:200px;
 }
 /***************  Заголовок и телефон по ФОТО ************/  
 header  p.container {
+margin-bottom: 10px;
 text-align: center;
 }
 header section div {
@@ -193,13 +201,15 @@ align-content: center;
 
 
 
-
+/************************************************
+            PAYPAL.HTML
 /***********************************************/ 
 main .paypal_catalog {
+margin-top: 10px;
 display: flex;
 flex-direction: row;
 justify-content: center;
-
+/* background-color: red; */
 }
 
 .paypal_catalog .container {
@@ -422,7 +432,11 @@ flex-direction: column;
 /***************************************************
           Каталог популярных  товаров
 ****************************************************/
+.main_catalog {
+padding: 20px 0;   
+}
 .main_catalog  .container{
+
 margin-right: : 15px;    
 display: flex;
 flex-direction: row;
@@ -908,10 +922,14 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap; 
 /* background-color: green; */
-justify-content: space-between;
- width: 100vw; 
+justify-content: center;
+
 }
 
+footer section div nav.footermenu ul{
+/* background-color: red;  */  
+ width: 170px;   
+}
 
 footer section:nth-child(1) {
     padding: 16px 0;
