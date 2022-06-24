@@ -1,4 +1,6 @@
 /***********************************************************
+                    560PX
+
 АДАПТАЦИЯ КАТАЛОГА ПОУПУЛЯРНЫХ ТОВАРОВ FLEX BOX CARD CONTAINER
 ************************************************************/
 
@@ -45,6 +47,20 @@
     left: 0px;
     width: 100%;
     
-}    
+}  
+/********  FOOTER MENU **********/
+ footer section {
+ font-size: 14px; 
+ }   
+    
+
+ /********* Блоки меню ********/    
+ footer section div.container nav.footermenu ul {
+margin: 5px auto; /* Отступы сверху и снизу и центрирование блоков меню */
+display: flex;
+flex-direction: column;
+width: 300px;
+    }   
+
 }
 
